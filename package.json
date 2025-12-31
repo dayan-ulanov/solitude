@@ -9,7 +9,13 @@
     "web:dev": "pnpm --filter web dev",
     "web:build": "pnpm --filter web build",
     "web:start": "pnpm --filter web start",
-    "dev": "pnpm -r --parallel dev"
+    "server:dev": "pnpm --filter server dev",
+    "server:build": "pnpm --filter server build",
+    "server:start": "pnpm --filter server start",
+    "dev": "pnpm -r --parallel dev",
+    "ui:tsc:check": "pnpm --filter @solitude/ui tsc",
+    "web:tsc:check": "pnpm --filter web tsc",
+    "server:tsc:check": "pnpm --filter server tsc"
   },
   "repository": {
     "type": "git",
