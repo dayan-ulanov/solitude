@@ -15,7 +15,9 @@
     "dev": "pnpm -r --parallel dev",
     "ui:tsc:check": "pnpm --filter @solitude/ui tsc",
     "web:tsc:check": "pnpm --filter web tsc",
-    "server:tsc:check": "pnpm --filter server tsc"
+    "server:tsc:check": "pnpm --filter server tsc",
+    "format": "prettier --write .",
+    "server:format": "pnpm --filter server format"
   },
   "repository": {
     "type": "git",
@@ -27,5 +29,8 @@
   "bugs": {
     "url": "https://github.com/dayan-ulanov/solitude/issues"
   },
-  "homepage": "https://github.com/dayan-ulanov/solitude#readme"
+  "homepage": "https://github.com/dayan-ulanov/solitude#readme",
+  "devDependencies": {
+    "prettier": "^3.7.4"
+  }
 }

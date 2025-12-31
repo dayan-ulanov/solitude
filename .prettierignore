@@ -1,0 +1,40 @@
+# Node modules
+node_modules/
+**/node_modules/
+
+# Build / dist folders
+dist/
+build/
+**/dist/
+**/build/
+.next/
+.out/
+.turbo/
+
+# Logs
+*.log
+logs/
+npm-debug.log*
+pnpm-debug.log*
+yarn-debug.log*
+
+# System files
+.DS_Store
+Thumbs.db
+
+# Temporary folders
+.tmp/
+.temp/
+
+# ESLint / Prettier configs
+*.config.js
+*.config.cjs
+*.config.mjs
+*.config.ts
+
+# TypeScript build info
+*.tsbuildinfo
+
+# Environment variables
+.env
+.env.*

@@ -1,3 +1,8 @@
 {
-  "extends": "../../packages/configs/tsconfig/tsconfig.nest.json"
+  "extends": "../../packages/configs/tsconfig/tsconfig.nest.json",
+  "compilerOptions": {
+    "outDir": "./dist",
+    "rootDir": "src"
+  },
+  "include": ["src/**/*"]
 }
