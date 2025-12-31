@@ -2,7 +2,15 @@
   "name": "solitude",
   "version": "0.0.1",
   "description": "",
-  "scripts": {},
+  "private": true,
+  "scripts": {
+    "ui:build": "pnpm --filter @solitude/ui build",
+    "ui:dev": "pnpm --filter @solitude/ui dev",
+    "web:dev": "pnpm --filter web dev",
+    "web:build": "pnpm --filter web build",
+    "web:start": "pnpm --filter web start",
+    "dev": "pnpm -r --parallel dev"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/dayan-ulanov/solitude.git"
