@@ -8,5 +8,12 @@
     ".next/dev/types/**/*.ts",
     "**/*.mts"
   ],
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["./src/*"]
+    },
+    "plugins": [{ "name": "next" }],
+  },
   "exclude": ["node_modules"]
 }
