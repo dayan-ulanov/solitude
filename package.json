@@ -13,13 +13,15 @@
     "server:build": "pnpm --filter server build",
     "server:start": "pnpm --filter server start",
     "dev": "pnpm -r --parallel dev",
+    "build": "pnpm -r --parallel build",
     "ui:tsc:check": "pnpm --filter @solitude/ui tsc",
     "web:tsc:check": "pnpm --filter web tsc",
     "server:tsc:check": "pnpm --filter server tsc",
     "format": "prettier --write .",
     "server:format": "pnpm --filter server format",
     "web:format": "pnpm --filter web format",
-    "ui:format": "pnpm --filter @solitude/ui format"
+    "ui:format": "pnpm --filter @solitude/ui format",
+    "prepare": "husky"
   },
   "repository": {
     "type": "git",
@@ -33,6 +35,14 @@
   },
   "homepage": "https://github.com/dayan-ulanov/solitude#readme",
   "devDependencies": {
+    "husky": "^9.1.7",
+    "lint-staged": "^16.2.7",
     "prettier": "^3.7.4"
+  },
+  "lint-staged": {
+    "**/*": "prettier --write --ignore-unknown",
+    "apps/web/**/*.{ts,tsx}": "pnpm web:build",
+    "packages/ui/**/*.{ts,tsx}": "pnpm ui:build",
+    "apps/server/**/*.ts": "pnpm server:build"
   }
 }
