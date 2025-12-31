@@ -2,7 +2,7 @@ export function Button(props: React.ButtonHTMLAttributes<HTMLButtonElement>) {
   return (
     <button
       {...props}
-      className={`px-4 py-2 rounded-md bg-black text-white hover:bg-neutral-800 ${props.className}`}
+      className={`px-4 py-1 rounded-md bg-blue-500 text-white hover:bg-blue-400 uppercase ${props.className}`}
     >
       {props.children}
     </button>

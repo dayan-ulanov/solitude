@@ -4,6 +4,7 @@
   "compilerOptions": {
     "jsx": "react-jsx",
     "verbatimModuleSyntax": true,
+    "moduleResolution": "bundler",
     "noUncheckedSideEffectImports": true,
     "moduleDetection": "force"
   }
