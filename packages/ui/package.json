@@ -16,7 +16,8 @@
   "scripts": {
     "build": "tsup",
     "dev": "tsup --watch",
-    "tsc": "tsc --noEmit"
+    "tsc": "tsc --noEmit",
+    "format": "prettier --write \"apps/**/*.{ts,tsx}\" \"packages/**/*.{ts,tsx}\""
   },
   "devDependencies": {
     "@types/react": "^19.2.7",

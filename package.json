@@ -17,7 +17,9 @@
     "web:tsc:check": "pnpm --filter web tsc",
     "server:tsc:check": "pnpm --filter server tsc",
     "format": "prettier --write .",
-    "server:format": "pnpm --filter server format"
+    "server:format": "pnpm --filter server format",
+    "web:format": "pnpm --filter web format",
+    "ui:format": "pnpm --filter @solitude/ui format"
   },
   "repository": {
     "type": "git",
